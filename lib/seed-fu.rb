@@ -32,7 +32,6 @@ module SeedFu
         record.send("#{k}=", v)
       end
       raise "Error Saving: #{record.inspect}" unless record.save(false)
-      puts " - #{@model_class} #{condition_hash.inspect}"      
       record
     end
 
